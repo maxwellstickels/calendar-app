@@ -20,11 +20,16 @@
     text-align: center;
     background-color: transparent;
     color: black;
+    font-size:200%;
     background-color: white;
     border-radius: 0;
     border-bottom: 10px solid black;
   }
   
+  h1 {
+    font-size: 3rem;
+  }
+
   .description {
     white-space: pre-wrap;
   }
@@ -95,5 +100,29 @@
     }
     .hour {
       width:15%;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    body {
+      font-size: 14px;
+    }
+    textarea {
+      width:60%;
+      }
+    .saveBtn {
+      width:20%;
+    }
+    .hour {
+      width:20%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 2rem;
     }
   }
