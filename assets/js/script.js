@@ -40,7 +40,6 @@ function saveLocal(event) {
     var targetId = target.parentNode.id;
     var idx = Number(targetId.slice(10));
     inputs[idx] = document.getElementById(targetId).childNodes[3].value;
-    console.log(inputs);
     localStorage.setItem('inputs', JSON.stringify(inputs));
 }
 
